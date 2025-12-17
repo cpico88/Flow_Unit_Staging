@@ -3,21 +3,21 @@
     <apiVersion>65.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <assignments>
-        <name>Flow_Test_Aimar</name>
-        <label>Flow Test Aimar</label>
+        <name>Flow_Test_Aimar_Update</name>
+        <label>Flow Test Aimar_Update</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <assignmentItems>
-            <assignToReference>$Record.City</assignToReference>
+            <assignToReference>$Record.Name</assignToReference>
             <operator>Assign</operator>
             <value>
-                <stringValue>Madrid</stringValue>
+                <stringValue>Aimar</stringValue>
             </value>
         </assignmentItems>
     </assignments>
     <environments>Default</environments>
     <interviewLabel>Flow Test Aimar {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Flow Test Aimar</label>
+    <label>Flow Test Aimar_Update</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -41,11 +41,11 @@
         <locationX>0</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Flow_Test_Aimar</targetReference>
+            <targetReference>Flow_Test_Aimar_Update</targetReference>
         </connector>
-        <object>Asset</object>
+        <object>CollaborationGroup</object>
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
 </Flow>
